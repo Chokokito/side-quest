@@ -1,12 +1,24 @@
 import React from "react";
+import { Poppins } from "next/font/google";
+import { Span } from "./Text/text";
 
-const Button = ({ Icon, onClick, children }) => (
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["600"],
+});
+
+const Button = ({ Icon, onClick, children, cn, cnIcon }) => (
   <button
     onClick={onClick}
-    className="flex items-center gap-2  p-2 pl-4 poppins-semibold rounded-[30px] bg-blue-600 text-white w-min"
+    className={
+      (poppins.className,
+      `flex items-center gap-2 transition p-1 pl-4 pr-1 poppins-semibold rounded-[30px] w-min sm:text-lg md:text-sm text-nowrap cursor-pointer ${cn}`)
+    }
   >
     {children}
-    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white text-blue-600">
+    <span
+      className={`inline-flex items-center justify-center w-10 h-10 rounded-full ml-6 ${cnIcon}`}
+    >
       {Icon ? <Icon size={20} /> : null}
     </span>
   </button>
