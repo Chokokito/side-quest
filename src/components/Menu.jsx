@@ -7,7 +7,7 @@ const poppins = Poppins({
 
 export default function Menu() {
   return (
-    <div className="p-2 xl:px-6  lg:px-10 font-thin h-min bg-purple-100/10 backdrop-blur-[1px] rounded-[50px] poppins-regular  hidden lg:flex justify-between items-center">
+    <div className="p-2 xl:px-6  lg:px-10 font-thin h-min bg-blue-300/10 backdrop-blur-[1px] rounded-[50px] poppins-regular  hidden lg:flex justify-between items-center">
       <ShineBorder shineColor={["#AD7CF3", "#927CF3"]} duration={5} />
       <ul className="flex items-center  gap-16 list-none justify-around text-white xl:text-lg md:text-md transition-all">
         <li className={poppins.className}>

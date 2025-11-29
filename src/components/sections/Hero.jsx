@@ -11,7 +11,7 @@ const { Title, Text } = require("../Text/text");
 
 function Hero() {
   return (
-    <section id="hero" className="flex lg:flex-row flex-col hero align-center ">
+    <section id="hero" className="flex lg:flex-row flex-col hero align-center items-center ">
       <div className="md:w-3xl lg:mx-5 lg:my-0 mb-8 flex justify-center item-center flex-col">
         <BlurText
           text="Sua carreira não é um jogo de um jogador só."
@@ -44,8 +44,12 @@ function Hero() {
           </Button>
         </div>
       </div>
-      <div>
-        <img src="https://placehold.co/500x500" alt="" className="" />
+      <div className="w-[300px] md:w-[400px] lg:w-[500px] flex justify-center items-center">
+        <img
+          src="/Pantera.png"
+          alt=""
+          className=" drop-shadow-2xl animate-float drop-shadow-purple-300"
+        />
       </div>
     </section>
   );

@@ -1,5 +1,8 @@
 import BlurText from "../reactbits/BlurText";
+import Companies from "../sections/Companies";
 import Hero from "../sections/Hero";
+import Students from "../sections/Students";
+import Testimonials from "../sections/Testimonials";
 import Works from "../sections/Works";
 import { Poppins } from "next/font/google";
 const poppins = Poppins({
@@ -21,6 +24,9 @@ export default function Body() {
         </h2>
       </div>
       <Works></Works>
+      <Companies></Companies>
+      <Students />
+      <Testimonials />
     </main>
   );
 }

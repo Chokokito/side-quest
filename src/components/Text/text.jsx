@@ -1,3 +1,12 @@
+
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["700"],
+});
+
+
+
 export function Title({ children }) {
   return (
     <h1 className={"text-2xl sm:text-3xl md:text-4xl poppins-bold"}>
@@ -8,7 +17,7 @@ export function Title({ children }) {
 
 export function SubTitle({ children }) {
   return (
-    <h2 className="text-xl poppins-semibold sm:text-2xl md:text-4xl">
+    <h2 className={`text-xl poppins-semibold sm:text-2xl md:text-4xl ${poppins.className}`}>
       {children}
     </h2>
   );
