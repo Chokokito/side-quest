@@ -31,7 +31,7 @@ const benefits = [
 
 export default function Companies() {
   return (
-    <section id="empresas" className={`w-full py-24 relative ${poppins.className}`}>
+    <section id="empresas" className={`w-full py-24 relative overflow-hidden ${poppins.className}`}>
       {/* Background Gradients */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px]  rounded-full -z-10" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full -z-10" />
@@ -57,7 +57,7 @@ export default function Companies() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button
                 Icon={Building2}
-                cn="bg-white text-slate-900 hover:bg-gray-100 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 transition-all duration-300"
+                cn="bg-white text-sm text-slate-900 hover:bg-gray-100 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 transition-all duration-300"
                 cnIcon="bg-slate-200 text-slate-900"
               >
                 Quero ser parceiro

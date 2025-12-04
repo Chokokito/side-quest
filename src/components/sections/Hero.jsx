@@ -11,7 +11,7 @@ const { Title, Text } = require("../Text/text");
 
 function Hero() {
   return (
-    <section id="hero" className="flex  p-10 border-b-2 border-slate-200/20 lg:flex-row flex-col hero align-center items-center ">
+    <section id="hero" className="flex overflow-hidden p-10 pt-20 lg:pt-10 border-b-2 border-slate-200/20 lg:flex-row flex-col hero align-center items-center ">
       <div className="md:w-3xl lg:mx-5 lg:my-0 mb-8 flex justify-center item-center flex-col">
         <BlurText
           text="Sua carreira não é um jogo de um jogador só."
@@ -19,9 +19,9 @@ function Hero() {
         />
 
         <Text className=" pt-5">
-          A Side Quest é o lobby onde os melhores talentos da{" "}
+          A Side Quest é o local onde os melhores talentos da{" "}
           <b className="text-[#FFD943]">ZION</b> encontram empresas prontas para
-          a próxima fase. Deixe de farmar teoria, comece a buildar seu futuro.
+          a próxima fase. Deixe de acumular teoria, comece a construir seu futuro.
         </Text>
         <div className="flex gap-4 mt-6 flex-col md:flex-row text-sm">
           <Button

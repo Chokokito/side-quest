@@ -37,7 +37,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className={`w-full  border-b-2 border-slate-200/20 py-20 flex flex-col items-center justify-center relative overflow-hidden ${poppins.className}`}>
+    <section id="depoimentos" className={`w-full overflow-hidden border-b-2 border-slate-200/20 py-20 flex flex-col items-center justify-center relative overflow-hidden ${poppins.className}`}>
       {/* Background Elements (Optional subtle glow) */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px]  rounded-full -z-10" />
 

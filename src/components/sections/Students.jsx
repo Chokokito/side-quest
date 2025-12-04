@@ -65,7 +65,7 @@ export default function Students() {
   const currentStudent = studentsData[currentIndex];
 
   return (
-    <section id="students" className={`${poppins.className} py-20 px-10 md:px-8 my-10 mt-20 border-b-2 border-slate-200/20  border-1 border-slate-200/20 bg-slate-900/30 rounded-xl text-white `}>
+    <section id="students" className={`${poppins.className} overflow-hidden py-20 px-10 md:px-8 my-10 mt-20 border-b-2 border-slate-200/20  border-1 border-slate-200/20 bg-slate-900/30 rounded-xl text-white `}>
 
       <div className="max-w-9xl mx-auto">
 
@@ -85,17 +85,17 @@ export default function Students() {
                   imageSrc={currentStudent.image}
                   altText={currentStudent.name}
                   captionText={currentStudent.role}
-                  containerHeight="500px"
-                  containerWidth="400px"
-                  imageHeight="500px"
-                  imageWidth="400px"
+                  containerHeight="400px"
+                  containerWidth="300px"
+                  imageHeight="400px"
+                  imageWidth="300px"
                   rotateAmplitude={10}
                   scaleOnHover={1.05}
                   showMobileWarning={false}
                   showTooltip={true}
                   displayOverlayContent={true}
                   overlayContent={
-                    <div className="left-0 w-full p-4 bg-gradient-to-t from-pink-900/90 to-transparent text-white rounded-b-[15px]">
+                    <div className="left-0 w-full p-4 bg-black text-white rounded-b-[15px]">
                       <p className="font-bold text-lg">{currentStudent.name}</p>
                       <p className="text-sm opacity-80">{currentStudent.role}</p>
                     </div>

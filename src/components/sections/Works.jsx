@@ -34,7 +34,7 @@ const FeatureItem = ({ Icon, title, description }) => (
 
 export default function Works() {
   return (
-    <section id="sobre" className={`w-full  border-b-2 border-slate-200/20 py-24 relative overflow-hidden ${poppins.className}`}>
+    <section id="sobre" className={`  w-full overflow-hidden border-b-2 border-slate-200/20 py-24 relative  ${poppins.className}`}>
       {/* Background Elements */}
       <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-purple-900/10 blur-[120px] rounded-full -z-10" />
       <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] bg-blue-900/10 blur-[120px] rounded-full -z-10" />
@@ -86,10 +86,10 @@ export default function Works() {
               imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
               altText="Kendrick Lamar - GNX Album Cover"
               captionText="2. O Mercado"
-              containerHeight="400px"
-              containerWidth="400px"
-              imageHeight="400px"
-              imageWidth="400px"
+              containerHeight="300px"
+              containerWidth="300px"
+              imageHeight="300px"
+              imageWidth="300px"
               rotateAmplitude={12}
               scaleOnHover={1.2}
               showMobileWarning={false}
@@ -111,10 +111,10 @@ export default function Works() {
               imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
               altText="Kendrick Lamar - GNX Album Cover"
               captionText="1. O Player"
-              containerHeight="400px"
-              containerWidth="400px"
-              imageHeight="400px"
-              imageWidth="400px"
+              containerHeight="300px"
+              containerWidth="300px"
+              imageHeight="300px"
+              imageWidth="300px"
               rotateAmplitude={12}
               scaleOnHover={1.2}
               showMobileWarning={false}
