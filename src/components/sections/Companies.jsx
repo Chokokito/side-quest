@@ -31,13 +31,13 @@ const benefits = [
 
 export default function Companies() {
   return (
-    <section id="empresas" className={`w-full py-24 relative overflow-hidden ${poppins.className}`}>
+    <section id="empresas" className={` py-12 lg:py-24 relative overflow-hidden ${poppins.className}`}>
       {/* Background Gradients */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px]  rounded-full -z-10" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full -z-10" />
 
       <div className="max-w-8xl mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Left Content */}
           <div className="flex-1 space-y-8 text-center lg:text-left items-center justify-center ">
             <div className=" px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm flex items-center ">

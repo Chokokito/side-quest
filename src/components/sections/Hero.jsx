@@ -11,7 +11,7 @@ const { Title, Text } = require("../Text/text");
 
 function Hero() {
   return (
-    <section id="hero" className="flex overflow-hidden p-10 pt-20 lg:pt-10 border-b-2 border-slate-200/20 lg:flex-row flex-col hero align-center items-center ">
+    <section id="hero" className="flex  p-6 pt-24 lg:p-10 lg:pt-10 border-b-2 border-slate-200/20 lg:flex-row flex-col hero align-center items-center ">
       <div className="md:w-3xl lg:mx-5 lg:my-0 mb-8 flex justify-center item-center flex-col">
         <BlurText
           text="Sua carreira não é um jogo de um jogador só."
@@ -23,11 +23,11 @@ function Hero() {
           <b className="text-[#FFD943]">ZION</b> encontram empresas prontas para
           a próxima fase. Deixe de acumular teoria, comece a construir seu futuro.
         </Text>
-        <div className="flex gap-4 mt-6 flex-col md:flex-row text-sm">
+        <div className="flex gap-4 mt-6 flex-col md:flex-row text-lg">
           <Button
             Icon={ArrowUpRight}
             cn={
-              " transition duration-300 ease-in-out hover:-translate-y-1 bg-gradient-to-r from-indigo-600 to-[#927CF3]  md:flex hidden shadow-1 hover:from-indigo-700 hover:to-blue-400 "
+              " font-sm transition duration-300 ease-in-out hover:-translate-y-1 bg-gradient-to-r from-indigo-600 to-[#927CF3]  md:flex hidden shadow-1 hover:from-indigo-700 hover:to-blue-400 "
             }
             cnIcon={"bg-[#221943]"}
           >
@@ -44,12 +44,12 @@ function Hero() {
           </Button>
         </div>
       </div>
-      <div className="w-[300px] md:w-[400px] lg:w-[500px] flex justify-center items-center">
+      <div className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px] flex justify-center items-center">
         <img
           src="/Pantera.png"
           alt=""
           fetchPriority="high"
-          className=" drop-shadow-2xl animate-float drop-shadow-purple-300"
+          className="w-full h-auto drop-shadow-2xl animate-float drop-shadow-purple-300"
         />
       </div>
     </section>

@@ -9,7 +9,6 @@ const poppins = Poppins({
 
 const socialLinks = [
     { icon: Instagram, href: "#", label: "Instagram" },
-
 ];
 
 const footerLinks = [
@@ -21,9 +20,9 @@ const footerLinks = [
 
 export default function Footer() {
     return (
-        <footer className={`w-full bg-[#0f001c] border-t border-white/10 pt-16 pb-8 ${poppins.className}`}>
+        <footer className={`w-full bg-[#0f001c] border-t border-white/10 pt-12 pb-6 lg:pt-16 lg:pb-8 ${poppins.className}`}>
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 mb-12">
                     {/* Brand Column */}
                     <div className="col-span-1 md:col-span-2 space-y-4">
                         <Logo />

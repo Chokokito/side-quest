@@ -34,17 +34,15 @@ const FeatureItem = ({ Icon, title, description }) => (
 
 export default function Works() {
   return (
-    <section id="sobre" className={`  w-full overflow-hidden border-b-2 border-slate-200/20 py-24 relative  ${poppins.className}`}>
+    <section id="sobre" className={`  overflow-hidden border-b-2 border-slate-200/20 py-12 lg:py-24 relative  ${poppins.className}`}>
       {/* Background Elements */}
-      <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-purple-900/10 blur-[120px] rounded-full -z-10" />
-      <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] bg-blue-900/10 blur-[120px] rounded-full -z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 flex flex-col gap-32">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col gap-16 lg:gap-32">
 
 
 
         {/* Block 1: O Mercado */}
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           <div className="flex-1 order-2 lg:order-1 space-y-8">
             <div>
               <span className="text-[#AD7CF3] font-semibold tracking-wider uppercase text-sm">Para quem busca</span>
@@ -105,7 +103,7 @@ export default function Works() {
           </div>
         </div>
         {/* Block 2: O Player */}
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           <div className="order-1 lg:order-1">
             <TiltedCard
               imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"

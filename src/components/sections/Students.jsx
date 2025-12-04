@@ -65,13 +65,13 @@ export default function Students() {
   const currentStudent = studentsData[currentIndex];
 
   return (
-    <section id="students" className={`${poppins.className} overflow-hidden py-20 px-10 md:px-8 my-10 mt-20 border-b-2 border-slate-200/20  border-1 border-slate-200/20 bg-slate-900/30 rounded-xl text-white `}>
+    <section id="students" className={`${poppins.className} overflow-hidden w-full min-w-[350px] py-12 px-4 md:px-8 my-10 mt-20 border-b-2 border-slate-200/20  border-1 border-slate-200/20 bg-slate-900/30 rounded-xl text-white `}>
 
-      <div className="max-w-9xl mx-auto">
+      <div className=" ">
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-40 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-40 items-center">
           {/* Left Column - Carousel Images */}
-          <div className="relative flex justify-center items-center min-h-[500px] order-2 lg:order-1">
+          <div className="relative flex justify-center items-center min-h-[400px] lg:min-h-[500px] order-2 lg:order-1">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={currentIndex}
@@ -86,9 +86,9 @@ export default function Students() {
                   altText={currentStudent.name}
                   captionText={currentStudent.role}
                   containerHeight="400px"
-                  containerWidth="300px"
+                  containerWidth="350px"
                   imageHeight="400px"
-                  imageWidth="300px"
+                  imageWidth="350px"
                   rotateAmplitude={10}
                   scaleOnHover={1.05}
                   showMobileWarning={false}

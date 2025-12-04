@@ -37,9 +37,8 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className={`w-full overflow-hidden border-b-2 border-slate-200/20 py-20 flex flex-col items-center justify-center relative overflow-hidden ${poppins.className}`}>
-      {/* Background Elements (Optional subtle glow) */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px]  rounded-full -z-10" />
+    <section id="depoimentos" className={`overflow-hidden border-b-2 border-slate-200/20 py-20 flex flex-col items-center justify-center relative overflow-hidden ${poppins.className}`}>
+
 
       <div className="text-center mb-12 px-4">
         <SubTitle>
@@ -50,7 +49,7 @@ export default function Testimonials() {
         </Text>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 max-w-7xl w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 min-w-[400px] ">
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
