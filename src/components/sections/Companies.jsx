@@ -31,7 +31,7 @@ const benefits = [
 
 export default function Companies() {
   return (
-    <section className={`w-full py-24 relative  ${poppins.className}`}>
+    <section id="empresas" className={`w-full py-24 relative ${poppins.className}`}>
       {/* Background Gradients */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px]  rounded-full -z-10" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full -z-10" />
@@ -76,7 +76,7 @@ export default function Companies() {
                   <item.icon size={24} className="text-[#321843]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-200 transition-colors">
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-yellow-200 transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-gray-400 text-sm leading-relaxed">

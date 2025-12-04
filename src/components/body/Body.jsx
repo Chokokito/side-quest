@@ -24,9 +24,9 @@ export default function Body() {
         </h2>
       </div>
       <Works></Works>
-      <Companies></Companies>
-      <Students />
       <Testimonials />
+      <Students />
+      <Companies></Companies>
     </main>
   );
 }

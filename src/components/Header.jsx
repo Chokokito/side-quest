@@ -3,11 +3,22 @@ import Logo from "../components/Logo";
 import Menu from "../components/Menu";
 import Button from "../components/Button";
 import { Play } from "lucide-react";
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+import { ShineBorder } from "./ui/shine-border";
 
 export default function Header() {
   return (
-    <header className="flex justify-around my-4 items-center ">
-      <Logo />
+    <header className="flex w-[90%] max-w-7xl justify-between my-4 items-center fixed top-5 left-1/2 -translate-x-1/2 z-50 bg-blue-300/10 backdrop-blur-[8px] rounded-[50px] px-6 py-3">
+      <ShineBorder shineColor={["#AD7CF3", "#927CF3"]} duration={5} />
+      <div className={`flex items-center gap-2 text-lg font-thin text-white/50 ${poppins.className}`}>
+        <Logo />
+        <h1>| Zion Belo Horizonte</h1>
+      </div>
+
       <Menu />
       <Button
         Icon={Play}

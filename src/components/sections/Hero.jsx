@@ -11,7 +11,7 @@ const { Title, Text } = require("../Text/text");
 
 function Hero() {
   return (
-    <section id="hero" className="flex lg:flex-row flex-col hero align-center items-center ">
+    <section id="hero" className="flex  p-10 border-b-2 border-slate-200/20 lg:flex-row flex-col hero align-center items-center ">
       <div className="md:w-3xl lg:mx-5 lg:my-0 mb-8 flex justify-center item-center flex-col">
         <BlurText
           text="Sua carreira não é um jogo de um jogador só."
@@ -48,6 +48,7 @@ function Hero() {
         <img
           src="/Pantera.png"
           alt=""
+          fetchPriority="high"
           className=" drop-shadow-2xl animate-float drop-shadow-purple-300"
         />
       </div>
