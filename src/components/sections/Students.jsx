@@ -32,12 +32,12 @@ const studentsData = [
   },
   {
     id: 3,
-    name: "Pedro Santos",
-    role: "Motion Designer",
+    name: "Gustavo Alcantara",
+    role: "Designer Gráfico/Ilustador",
     description:
-      "Transforma ideias estáticas em narrativas visuais dinâmicas. Especialista em After Effects e Rive para web.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop",
-    behanceUrl: "https://behance.net",
+      "Designer Gráfico e Ilustrador com profunda experiência em Photoshop, portador de um estilo único de arte tanto digital quanto física.",
+    image: "/ghal.jpeg",
+    behanceUrl: "https://behance.net/eualcantara",
   },
 ];
 

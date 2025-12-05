@@ -81,9 +81,9 @@ export default function Works() {
 
           <div className="order-1 lg:order-2 ">
             <TiltedCard
-              imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
-              altText="Kendrick Lamar - GNX Album Cover"
-              captionText="2. O Mercado"
+              imageSrc="/pantera_fechando.png"
+              altText=" O Mercado"
+              captionText="O Mercado"
               containerHeight="300px"
               containerWidth="300px"
               imageHeight="300px"
@@ -95,7 +95,7 @@ export default function Works() {
               displayOverlayContent={true}
               overlayContent={
                 <p className="text-sm font-bold p-6 bg-slate-800/20 rounded-xl backdrop-blur-md text-white">
-                  2. O MERCADO
+                  O MERCADO
                 </p>
               }
             />
@@ -106,9 +106,9 @@ export default function Works() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           <div className="order-1 lg:order-1">
             <TiltedCard
-              imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+              imageSrc="/pantera_designer.png"
               altText="Kendrick Lamar - GNX Album Cover"
-              captionText="1. O Player"
+              captionText="O Player"
               containerHeight="300px"
               containerWidth="300px"
               imageHeight="300px"
@@ -120,7 +120,7 @@ export default function Works() {
               displayOverlayContent={true}
               overlayContent={
                 <p className="text-sm font-bold p-6 bg-slate-800/20 rounded-xl backdrop-blur-md text-white">
-                  1. O PLAYER
+                  O PLAYER
                 </p>
               }
             />

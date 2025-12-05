@@ -22,7 +22,7 @@ export default function Header() {
       <Menu />
       <Button
         Icon={Play}
-        cn=" bg-[#E5D0FF]/90 !pl-1  border-slate-800 text-[#202020] hover:translate-y-1 hover:scale-110 transition-all glow-hover backdrop-blur-xs "
+        cn=" bg-[#E5D0FF]/90 !pl-1 md:!pl-3 border-slate-800 text-[#202020] hover:translate-y-1 hover:scale-110 transition-all glow-hover backdrop-blur-xs "
         cnIcon="bg-[#321843] text-slate-200 !ml-0 "
         cnText="md:block hidden"
       >
