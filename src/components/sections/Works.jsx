@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import TiltedCard from "../reactbits/TiltedCard";
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight } from "lucide-react";
 import {
   BookKey,
   BriefcaseBusiness,
@@ -25,29 +25,30 @@ const FeatureItem = ({ Icon, title, description }) => (
       <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#AD7CF3] transition-colors">
         {title}
       </h3>
-      <p className="text-gray-300 text-base leading-relaxed">
-        {description}
-      </p>
+      <p className="text-gray-300 text-base leading-relaxed">{description}</p>
     </div>
   </div>
 );
 
 export default function Works() {
   return (
-    <section id="sobre" className={`  overflow-hidden border-b-2 border-slate-200/20 py-12 lg:py-24 relative  ${poppins.className}`}>
+    <section
+      id="sobre"
+      className={`  overflow-hidden border-b-2 border-slate-200/20 py-12 lg:py-24 relative  ${poppins.className}`}
+    >
       {/* Background Elements */}
 
       <div className="max-w-7xl mx-auto px-6 flex flex-col gap-16 lg:gap-32">
-
-
-
         {/* Block 1: O Mercado */}
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           <div className="flex-1 order-2 lg:order-1 space-y-8">
             <div>
-              <span className="text-[#AD7CF3] font-semibold tracking-wider uppercase text-sm">Para quem busca</span>
+              <span className="text-[#AD7CF3] font-semibold tracking-wider uppercase text-sm">
+                Para quem busca
+              </span>
               <h2 className="text-4xl md:text-5xl font-bold text-white mt-2 leading-tight">
-                Encontre competência, <br className="hidden lg:block" /> não apenas promessa.
+                Encontre competência, <br className="hidden lg:block" /> não
+                apenas promessa.
               </h2>
             </div>
 
@@ -67,15 +68,24 @@ export default function Works() {
                 title="Conexão Direta"
                 description="Encurte o caminho entre a sua vaga e o talento certo, sem burocracia."
               />
-              <Button
-                Icon={ArrowUpRight}
-                cn={
-                  " transition duration-300 ease-in-out text-slate-900/90 hover:-translate-y-1 text- bg-gradient-to-r from-purple-300 to-[#927CF3]  md:flex hidden shadow-1 hover:from-purple-100 hover:to-pink-400 "
-                }
-                cnIcon={"bg-[#221943] text-white"}
+              <a
+                href="
+          https://docs.google.com/forms/d/e/1FAIpQLSeHhftIr0s_0ML3hE2LR3uPyz12vEAimY6mSSHWY9rTI3Zbxw/viewform
+          
+          "
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Encontrar meu novo talento
-              </Button>
+                <Button
+                  Icon={ArrowUpRight}
+                  cn={
+                    " transition duration-300 ease-in-out text-slate-900/90 hover:-translate-y-1 text- bg-gradient-to-r from-purple-300 to-[#927CF3]  md:flex hidden shadow-1 hover:from-purple-100 hover:to-pink-400 "
+                  }
+                  cnIcon={"bg-[#221943] text-white"}
+                >
+                  Encontrar meu novo talento
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -99,7 +109,6 @@ export default function Works() {
                 </p>
               }
             />
-
           </div>
         </div>
         {/* Block 2: O Player */}
@@ -128,9 +137,12 @@ export default function Works() {
 
           <div className="flex-1 order-2 lg:order-2 space-y-8">
             <div>
-              <span className="text-[#AD7CF3] font-semibold tracking-wider uppercase text-sm">Para quem cria</span>
+              <span className="text-[#AD7CF3] font-semibold tracking-wider uppercase text-sm">
+                Para quem cria
+              </span>
               <h2 className="text-4xl md:text-5xl font-bold text-white mt-2 leading-tight">
-                Transforme teoria em <br className="hidden lg:block" /> prova técnica.
+                Transforme teoria em <br className="hidden lg:block" /> prova
+                técnica.
               </h2>
             </div>
 
@@ -150,15 +162,25 @@ export default function Works() {
                 title="Portfólio Vivo"
                 description="Construa uma vitrine de soluções entregues, não apenas de conceitos estudados."
               />
-              <Button
-                Icon={ArrowUpRight}
-                cn={
-                  " transition duration-300 ease-in-out text-slate-900/90 hover:-translate-y-1 text- bg-gradient-to-r from-purple-300 to-[#927CF3]  md:flex hidden shadow-1  hover:from-purple-100 hover:to-pink-400"
-                }
-                cnIcon={"bg-[#221943] text-white"}
+
+              <a
+                href="
+
+
+https://docs.google.com/forms/d/e/1FAIpQLSfewnMwD8I7Z6unnONY42Zpg_1gsRKQWppkBuqs6DkPNUX9Eg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Quero mostrar meu potencial
-              </Button>
+                <Button
+                  Icon={ArrowUpRight}
+                  cn={
+                    " transition duration-300 ease-in-out text-slate-900/90 hover:-translate-y-1 text- bg-gradient-to-r from-purple-300 to-[#927CF3]  md:flex hidden shadow-1  hover:from-purple-100 hover:to-pink-400"
+                  }
+                  cnIcon={"bg-[#221943] text-white"}
+                >
+                  Quero mostrar meu potencial
+                </Button>
+              </a>
             </div>
           </div>
         </div>

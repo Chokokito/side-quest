@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // Corrected import for framer-motion
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
@@ -19,7 +19,8 @@ const studentsData = [
     description:
       "Programador experimente com foco no desenvolvimento front-end, com especialização em criar websites interativos e responsivos ( como esse 😝 ) .",
     image: "/Gueguel.png",
-    behanceUrl: "https://www.behance.net/gallery/231617699/Portfolio-Miguel-Fernando-Creative-Dev",
+    behanceUrl:
+      "https://www.behance.net/gallery/231617699/Portfolio-Miguel-Fernando-Creative-Dev",
   },
   {
     id: 2,
@@ -59,16 +60,19 @@ export default function Students() {
 
   const handlePrev = () => {
     setDirection(-1);
-    setCurrentIndex((prev) => (prev - 1 + studentsData.length) % studentsData.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + studentsData.length) % studentsData.length
+    );
   };
 
   const currentStudent = studentsData[currentIndex];
 
   return (
-    <section id="students" className={`${poppins.className} overflow-hidden w-full min-w-[350px] py-12 px-4 md:px-8 my-10 mt-20 border-b-2 border-slate-200/20  border-1 border-slate-200/20 bg-slate-900/30 rounded-xl text-white `}>
-
+    <section
+      id="students"
+      className={`${poppins.className} overflow-hidden w-full min-w-[350px] py-12 px-4 md:px-8 my-10 mt-10 border-b-2 border-slate-200/20  border-1 border-slate-200/20 bg-slate-900/30 rounded-xl text-white `}
+    >
       <div className=" ">
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-40 items-center">
           {/* Left Column - Carousel Images */}
           <div className="relative flex justify-center items-center min-h-[400px] lg:min-h-[500px] order-2 lg:order-1">
@@ -97,7 +101,9 @@ export default function Students() {
                   overlayContent={
                     <div className="left-0 w-full p-4 bg-black text-white rounded-b-[15px]">
                       <p className="font-bold text-lg">{currentStudent.name}</p>
-                      <p className="text-sm opacity-80">{currentStudent.role}</p>
+                      <p className="text-sm opacity-80">
+                        {currentStudent.role}
+                      </p>
                     </div>
                   }
                 />
@@ -123,7 +129,9 @@ export default function Students() {
               <div className="h-1 w-20 bg-purple-500 mb-8 rounded-full" />
 
               <h3 className="text-3xl font-bold mb-2">{currentStudent.name}</h3>
-              <p className="text-xl text-purple-400 mb-6 font-medium">{currentStudent.role}</p>
+              <p className="text-xl text-purple-400 mb-6 font-medium">
+                {currentStudent.role}
+              </p>
 
               <p className="text-zinc-400 text-lg leading-relaxed mb-8 max-w-md">
                 {currentStudent.description}
@@ -167,8 +175,11 @@ export default function Students() {
                       setDirection(idx > currentIndex ? 1 : -1);
                       setCurrentIndex(idx);
                     }}
-                    className={`h - 2 rounded - full transition - all duration - 300 ${idx === currentIndex ? "w-8 bg-purple-500" : "w-2 bg-zinc-700 hover:bg-zinc-600"
-                      } `}
+                    className={`h - 2 rounded - full transition - all duration - 300 ${
+                      idx === currentIndex
+                        ? "w-8 bg-purple-500"
+                        : "w-2 bg-zinc-700 hover:bg-zinc-600"
+                    } `}
                     aria-label={`Go to slide ${idx + 1} `}
                   />
                 ))}
@@ -180,4 +191,3 @@ export default function Students() {
     </section>
   );
 }
-

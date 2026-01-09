@@ -8,25 +8,24 @@ const poppins = Poppins({
 export default function Menu() {
   return (
     <div className="p-2 xl:px-6  lg:px-10 font-thin h-min bg-blue-300/10 backdrop-blur-[30px] rounded-[50px] poppins-regular  hidden lg:flex justify-between items-center">
-
       <ul className="flex items-center  gap-16 list-none justify-around text-white xl:text-lg md:text-md transition-all">
         <li className={poppins.className}>
-          <a href="#sobre" className="hover:text-purple-400 ">
+          <a href="#sobre" className="hover:text-amber-400 ">
             Sobre
           </a>
         </li>
         <li className={poppins.className}>
-          <a href="#depoimentos" className="hover:text-purple-400 ">
+          <a href="#depoimentos" className="hover:text-amber-400 ">
             Depoimentos
           </a>
         </li>
         <li className={poppins.className}>
-          <a href="#alunos" className="hover:text-purple-400">
+          <a href="#alunos" className="hover:text-amber-400">
             Alunos
           </a>
         </li>
         <li className={poppins.className}>
-          <a href="#empresas" className="hover:text-purple-400">
+          <a href="#empresas" className="hover:text-amber-400">
             Empresas
           </a>
         </li>

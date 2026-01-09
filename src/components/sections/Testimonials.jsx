@@ -15,7 +15,8 @@ const testimonials = [
     role: "UX Designer @ TechFlow",
     content:
       "A Side Quest mudou minha carreira. Encontrei projetos que realmente desafiaram minhas habilidades e me conectaram com empresas incríveis.",
-    avatar: "https://ui-avatars.com/api/?name=Ana+Silva&background=AD7CF3&color=fff",
+    avatar:
+      "https://ui-avatars.com/api/?name=Ana+Silva&background=AD7CF3&color=fff",
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ const testimonials = [
     role: "Fullstack Dev @ StartUp",
     content:
       "A plataforma é intuitiva e direta ao ponto. Sem burocracia, apenas conexões reais e oportunidades de crescimento.",
-    avatar: "https://ui-avatars.com/api/?name=Carlos+Mendes&background=8B61C9&color=fff",
+    avatar:
+      "https://ui-avatars.com/api/?name=Carlos+Mendes&background=8B61C9&color=fff",
   },
   {
     id: 3,
@@ -31,22 +33,22 @@ const testimonials = [
     role: "Product Manager @ Inova",
     content:
       "Consegui montar meu time dos sonhos através da Side Quest. A qualidade dos talentos aqui é diferenciada.",
-    avatar: "https://ui-avatars.com/api/?name=Beatriz+Costa&background=5b21b6&color=fff",
+    avatar:
+      "https://ui-avatars.com/api/?name=Beatriz+Costa&background=5b21b6&color=fff",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className={`overflow-hidden border-b-2 border-slate-200/20 py-20 flex flex-col items-center justify-center relative overflow-hidden ${poppins.className}`}>
-
-
+    <section
+      id="depoimentos"
+      className={`overflow-hidden border-b-2 border-slate-200/20 py-10 flex flex-col items-center justify-center relative overflow-hidden ${poppins.className}`}
+    >
       <div className="text-center mb-12 px-4">
         <SubTitle>
           O que dizem os <span className="text-[#AD7CF3]">Players</span>
         </SubTitle>
-        <Text>
-          Histórias de quem já subiu de nível com a Side Quest.
-        </Text>
+        <Text>Histórias de quem já subiu de nível com a Side Quest.</Text>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 min-w-[400px] ">
