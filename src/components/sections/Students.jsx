@@ -69,7 +69,7 @@ export default function Students() {
 
   return (
     <section
-      id="students"
+      id="alunos"
       className={`${poppins.className} overflow-hidden w-full min-w-[350px] py-12 px-4 md:px-8 my-10 mt-10 border-b-2 border-slate-200/20  border-1 border-slate-200/20 bg-slate-900/30 rounded-xl text-white `}
     >
       <div className=" ">

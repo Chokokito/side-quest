@@ -1,19 +1,30 @@
 import { Poppins } from "next/font/google";
 import Logo from "./Logo";
-import { Instagram, Linkedin, Twitter, Github } from "lucide-react";
+import { Instagram, Linkedin, Twitter, Github, Phone } from "lucide-react";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
 });
 
-const socialLinks = [{ icon: Instagram, href: "#", label: "Instagram" }];
+const socialLinks = [
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/zion_belohorizonte/",
+    label: "Instagram",
+  },
+  {
+    icon: Phone,
+    href: "https://wa.me/5531991234567",
+    label: "WhatsApp",
+  },
+];
 
 const footerLinks = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Vagas", href: "#vagas" },
+  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Alunos", href: "#alunos" },
   { label: "Empresas", href: "#empresas" },
-  { label: "Comunidade", href: "#comunidade" },
 ];
 
 export default function Footer() {
@@ -74,7 +85,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Side Quest. Todos os direitos
             reservados.
           </p>
-          <div className="flex gap-6">
+          <div className="flex gap-6 hidden">
             <a
               href="#"
               className="text-gray-500 hover:text-gray-300 text-xs transition-colors"
